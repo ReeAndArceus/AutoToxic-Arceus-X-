@@ -1,0 +1,125 @@
+-- Made By Ree
+
+ local ScreenGui = Instance.new("ScreenGui") 
+
+local main = Instance.new("Frame") 
+
+local title = Instance.new("TextLabel") 
+
+local Text = Instance.new("TextButton") 
+
+local Text = Instance.new("TextButton") 
+
+local close = Instance.new("TextButton") 
+
+local openmain = Instance.new("Frame") 
+
+local open = Instance.new("TextButton") 
+
+--Properties: 
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main" 
+
+main.Parent = ScreenGui 
+
+main.BackgroundColor3 = Color3.new(0, 0, 0) 
+
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0) 
+
+main.Size = UDim2.new(0, 332, 0, 211) 
+
+main.Visible = false 
+
+main.Active = true 
+
+main.Draggable = true 
+
+title.Name = "title" title.Parent = main 
+
+title.BackgroundColor3 = Color3.new(255, 255, 255) 
+
+title.Size = UDim2.new(0, 332, 0, 31) 
+
+title.Font = Enum.Font.GothamBold 
+
+title.Text = "Ree AutoToxic" 
+
+title.TextColor3 = Color3.new(0, 0, 0) 
+
+title.TextSize = 14 
+
+Text.Name = "Text" 
+
+Text.Parent = main 
+
+Text.BackgroundColor3 = Color3.new(198, 230, 251) 
+
+Text.Position = UDim2.new(0.036144577, 0, 0.379146934, 0) 
+
+Text.Size = UDim2.new(0, 110, 0, 50) 
+
+Text.Font = Enum.Font.GothamBold 
+
+Text.Text = "AutoToxic (Kids Mode)" Text.TextColor3 = Color3.new(0, 0, 0) Text.TextScaled = true Text.TextSize = 10 Text.TextWrapped = true Text.MouseButton1Down:connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/autoToxic-2-for-loadstring/main/Autotoxic%202"))()
+
+end) 
+
+Te.Name = "Te" Te.Parent = main Te.BackgroundColor3 = Color3.new(202, 1, 45)
+
+Te.Position = UDim2.new(0.614457846, 0, 0.379146934, 0) Te.Size = UDim2.new(0, 110, 0, 50) 
+
+Te.Font = Enum.Font.GothamBold Te.Text = "AutoToxic (Adult Mode)" Te.TextColor3 = Color3.new(0, 0, 0) 
+
+Te.TextScaled = true Te.TextSize = 14 Te.TextWrapped = true 
+
+Te.MouseButton1Down:connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/Autotoxic-3-For-loadstring/main/Autotoxic%203%20for%20loadstring"))()
+
+end) 
+
+close.Name = "close" 
+
+close.Parent = main close.BackgroundColor3 = Color3.new(1, 0, 0) 
+
+close.Position = UDim2.new(0.879518092, 0, 0, 0) 
+
+close.Size = UDim2.new(0, 40, 0, 31) close.Font = Enum.Font.GothamBlack close.Text = "Close" close.TextColor3 = Color3.new(0, 0, 0) 
+
+close.TextScaled = true close.TextSize = 14 close.TextWrapped = true
+
+close.MouseButton1Down:connect(function() main.Visible = false openmain.Visible = true 
+
+end) 
+
+openmain.Name = "openmain" openmain.Parent = ScreenGui
+
+openmain.BackgroundColor3 = Color3.new(1, 1, 1) openmain.Position =
+
+UDim2.new(0.00801973976, 0, 0.423832953, 0) 
+
+openmain.Size = UDim2.new(0, 100, 0, 28) 
+
+openmain.Active = true 
+
+openmain.Draggable = true open.Name = "open" 
+
+open.Parent = openmain 
+
+open.BackgroundColor3 = Color3.new(1, 0, 0) 
+
+open.Size = UDim2.new(0, 100, 0, 28) 
+
+open.Font = Enum.Font.GothamBold 
+
+open.Text = "Open" open.TextColor3 = Color3.new(0, 0, 0) 
+
+open.TextSize = 18 open.TextWrapped = true
+
+open.MouseButton1Down:connect(function() 
+
+openmain.Visible = false main.Visible = true end)
