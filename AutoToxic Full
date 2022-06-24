@@ -62,7 +62,9 @@ Text.Size = UDim2.new(0, 110, 0, 50)
 
 Text.Font = Enum.Font.GothamBold 
 
-Text.Text = "AutoToxic (Kids Mode)" Text.TextColor3 = Color3.new(0, 0, 0) Text.TextScaled = true Text.TextSize = 10 Text.TextWrapped = true Text.MouseButton1Down:connect(function()
+Text.Text = "AutoToxic (Kids Mode)" Text.TextColor3 = Color3.new(0, 0, 0) Text.TextScaled = true Text.TextSize = 10 Text.TextWrapped = true 
+
+Text.MouseButton1Down:connect(function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/autoToxic-2-for-loadstring/main/Autotoxic%202"))()
 
